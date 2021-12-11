@@ -13,11 +13,12 @@ function autenticar() {
         $.ajax({
             type: 'GET',
             /** 
-             * url: "http://localhost:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword").val(),
-             *   
+             * 
+             * url: "http://localhost:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword").val(),   
              */
 
              url:"http://129.151.111.172:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword").val(),
+             
             contentType: "application/json;  charset=utf-8",
             dataType: 'json',
 
@@ -25,16 +26,16 @@ function autenticar() {
                 if (response.id === null) {
                     alert("Usuario o contraseña invalido, o registrese para continuar. Gracias. ");
                 }
-                else {
+                else {                    
                     alert("Usuario y contraseña validos");
+                    pasoProductos();
                 }
             },
         });
     }
 }
-/**
- * function registrarse() {
- * window.location.href = "html/registro.html";
- * }
- * 
- */
+
+function pasoProductos() {
+window.location.href = "html/productos.html";
+}
+
