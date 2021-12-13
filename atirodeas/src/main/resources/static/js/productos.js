@@ -30,7 +30,7 @@ function productosRegistrar() {
              *
              */
             
-             url: "http://129.151.111.172:8080/api/accessory/"+ $("#productoReference").val(), 
+             url: "http://152.70.223.94:8080/api/accessory/"+ $("#productoReference").val(), 
             contentType: "application/json;  charset=utf-8",
             dataType: 'json',
             success: function (response) {
@@ -77,7 +77,7 @@ function Register() {
          *
          */
 
-         url:"http://129.151.111.172:8080/api/accessory/new", 
+         url:"http://152.70.223.94:8080/api/accessory/new", 
         
         contentType: "application/json;  charset=utf-8",
         dataType: 'json',
@@ -108,7 +108,7 @@ function obtenerItems(){
      * 
      */
     
-     url: "http://129.151.111.172:8080/api/accessory/all",
+     url: "http://152.70.223.94:8080/api/accessory/all",
         
 	contentType: "application/json; charset=utf-8",
 	dataType: 'json',
@@ -164,7 +164,7 @@ function eliminarItem(idElemento){
          * 
          */
 
-         url: "http://129.151.111.172:8080/api/accessory/" + idElemento,
+         url: "http://152.70.223.94:8080/api/accessory/" + idElemento,
 
         type:'DELETE',
         contentType:'application/json',
@@ -205,7 +205,7 @@ function actualizar(idElemento){
      * 
      */
      
-     url: "http://129.151.111.172:8080/api/accessory/update", 
+     url: "http://152.70.223.94:8080/api/accessory/update", 
      
 	type:'PUT',
 	

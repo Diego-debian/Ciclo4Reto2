@@ -26,7 +26,7 @@ function registros(){
          * url: "http://localhost:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword1").val() ,
          * 
          */
-         url: "http://129.151.111.172:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword1").val(),   
+         url: "http://152.70.223.94:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword1").val(),   
             
             contentType: "application/json;  charset=utf-8",
             dataType: 'json',
@@ -67,7 +67,7 @@ function valorID(){
      *
      */
      
-     url: "http://129.151.111.172:8080/api/user/all",
+     url: "http://152.70.223.94:8080/api/user/all",
         
         contentType: "application/json;  charset=utf-8",
         dataType: 'json',
@@ -110,7 +110,7 @@ function Register(){
          *  
          */ 
          
-         url:"http://129.151.111.172:8080/api/user/new", 
+         url:"http://152.70.223.94:8080/api/user/new", 
         contentType: "application/json;  charset=utf-8",
         dataType: 'json',
         data: JSON.stringify(objetoJS),

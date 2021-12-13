@@ -17,7 +17,7 @@ function autenticar() {
              *
              * 
              */
-             url:"http://129.151.111.172:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword").val(), 
+             url:"http://152.70.223.94:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword").val(), 
              
             contentType: "application/json;  charset=utf-8",
             dataType: 'json',
@@ -53,7 +53,7 @@ function VerificarUsuario(idUsuario){
      * 
      */
     
-     url: "http://129.151.111.172:8080/api/user/"+ idUsuario,
+     url: "http://152.70.223.94:8080/api/user/"+ idUsuario,
 	type:'GET',
 	
 	success:function(response) {
@@ -123,7 +123,7 @@ function obtenerProductos(){
      *
      */
     
-     url: "http://129.151.111.172:8080/api/accessory/all",
+     url: "http://152.70.223.94:8080/api/accessory/all",
         
 	contentType: "application/json; charset=utf-8",
 	dataType: 'json',
