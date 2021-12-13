@@ -23,10 +23,10 @@ function registros(){
             type: 'GET',
 	    /** 
          * 
+         * url: "http://localhost:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword1").val() ,
          * 
-         * url: "http://129.151.111.172:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword1").val(),   
          */
-         url: "http://localhost:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword1").val() ,
+         url: "http://129.151.111.172:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword1").val(),   
             
             contentType: "application/json;  charset=utf-8",
             dataType: 'json',
@@ -63,10 +63,11 @@ function valorID(){
         type: 'GET',
     /** 
      * 
-     * 
-     * url: "http://129.151.111.172:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword1").val(),   
+     * url: "http://localhost:8080/api/user/all",
+     *
      */
-     url: "http://localhost:8080/api/user/all",
+     
+     url: "http://129.151.111.172:8080/api/user/all",
         
         contentType: "application/json;  charset=utf-8",
         dataType: 'json',
@@ -104,11 +105,12 @@ function Register(){
         type:'POST',
         /**
          *
-         *url:"http://129.151.111.172:8080/api/user/new", 
+         * url:"http://localhost:8080/api/user/new",
+         *
          *  
          */ 
          
-         url:"http://localhost:8080/api/user/new",
+         url:"http://129.151.111.172:8080/api/user/new", 
         contentType: "application/json;  charset=utf-8",
         dataType: 'json',
         data: JSON.stringify(objetoJS),

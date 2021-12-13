@@ -13,11 +13,11 @@ function autenticar() {
         $.ajax({
             type: 'GET',
             /** 
-             *url:"http://129.151.111.172:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword").val(), 
+             *              url: "http://localhost:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword").val(),   
+             *
              * 
              */
-
-             url: "http://localhost:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword").val(),   
+             url:"http://129.151.111.172:8080/api/user/" + $("#userEmail").val() + "/" + $("#userPassword").val(), 
              
             contentType: "application/json;  charset=utf-8",
             dataType: 'json',
@@ -48,10 +48,12 @@ function VerificarUsuario(idUsuario){
 	contentType:'application/json',
     /**
      * 
-     * url: "http://129.151.111.172:8080/api/user/"+ idUsuario,
+     * url: "http://localhost:8080/api/user/"+idUsuario,
+     *
      * 
      */
-    url: "http://localhost:8080/api/user/"+idUsuario,
+    
+     url: "http://129.151.111.172:8080/api/user/"+ idUsuario,
 	type:'GET',
 	
 	success:function(response) {
@@ -116,11 +118,12 @@ function obtenerProductos(){
     $.ajax({
     /**
      * 
-     * 
-     * url: "http://129.151.111.172:8080/api/accessory/all",
+     *      url: "http://localhost:8080/api/accessory/all",
+
+     *
      */
     
-     url: "http://localhost:8080/api/accessory/all",
+     url: "http://129.151.111.172:8080/api/accessory/all",
         
 	contentType: "application/json; charset=utf-8",
 	dataType: 'json',
