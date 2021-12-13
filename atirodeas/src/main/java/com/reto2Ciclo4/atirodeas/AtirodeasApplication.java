@@ -1,6 +1,7 @@
 package com.reto2Ciclo4.atirodeas;
 
 import com.reto2Ciclo4.atirodeas.repository.crud.AccessoryCrudRepository;
+import com.reto2Ciclo4.atirodeas.repository.crud.OrderCrudRepository;
 import com.reto2Ciclo4.atirodeas.repository.crud.UserCrudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -14,6 +15,9 @@ public class AtirodeasApplication implements CommandLineRunner {
 	@Autowired
 	private AccessoryCrudRepository accessoryCrud;
 
+	@Autowired
+	private OrderCrudRepository orderCrud;
+
 	public static void main(String[] args)
 	{
 		SpringApplication.run(AtirodeasApplication.class, args);
@@ -25,6 +29,8 @@ public class AtirodeasApplication implements CommandLineRunner {
 		userRepo.deleteAll();
 
 		accessoryCrud.deleteAll();
+
+		orderCrud.deleteAll();
 
 
 	}

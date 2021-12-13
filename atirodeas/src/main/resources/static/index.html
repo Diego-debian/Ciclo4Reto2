@@ -41,12 +41,44 @@
               </nav>
     </header>
 
+    <div id="coordinador" hidden>
+      <div class="container">
+        <div id="coordinador-row" class="row justify-content-center align-items-center">
+          <div id="coordinador-column" class="col-md-24">
+            <div id="coordinador-box" class="col-md-24">
+              <form id="coordinador-form" class="form" action="" method="">
+                <h3 class="text-center text-info">Mi Perfil</h3>
+                <div class="form-group">
+                  <label for="useremail" class="text-info">Perfil:</label><br />
+                  
+                    <table class="table table-bordered">
+                      <thead>
+                          <tr>
+                              <th scope="col" class="text-center"> <I>IDENTIFICACIÓN</I></th>
+                              <th scope="col" class="text-center"> NOMBRES</th>
+                              <th scope="col" class="text-center"> E-MAIL</th>
+                              <th scope="col" class="text-center"> PERFIL</th>
+                              <th scope="col" class="text-center"> ZONA</th>
+                              <th scope="col" class="text-right">  </th>                                
+                          </tr>
+                      </thead>
+                      <tbody>
+                 
+                      </thead>
+                      <tbody class="table table-bordered" id="coordinadorResultado">
+                      </tbody>
+                </table> 
+                </div>                 
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="login">
         <div class="container">
-          <div
-            id="login-row"
-            class="row justify-content-center align-items-center"
-          >
+          <div  id="login-row" class="row justify-content-center align-items-center">
             <div id="login-column" class="col-md-6">
               <div id="login-box" class="col-md-12">
                 <form id="login-form" class="form" action="" method="post">
@@ -87,8 +119,7 @@
                         >No tienes una cuenta?
                         <a href="html/registro.html" class="text-info"
                           >Crea tu cuenta aqui</a
-                        ></span
-                      >
+                        ></span>
                     </label>
                   </div>
                 </form>
@@ -97,5 +128,88 @@
           </div>
         </div>
       </div>
+
+
+
+      <div id="asesor" hidden>
+        <div class="container">
+          <div id="asesor-row" class="row justify-content-center align-items-center">
+            <div id="asesor-column" class="col-md-24">
+              <div id="asesor-box" class="col-md-24">
+                <form id="asesor-form" class="form" action="" method="">
+                  <h3 class="text-center text-info">Mi Perfil</h3>
+                  <div class="form-group">
+                    <label for="useremail" class="text-info">Perfil:</label><br />
+                    
+                      <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center"> <I>IDENTIFICACIÓN</I></th>
+                                <th scope="col" class="text-center"> NOMBRES</th>
+                                <th scope="col" class="text-center"> E-MAIL</th>
+                                <th scope="col" class="text-center"> PERFIL</th>
+                                <th scope="col" class="text-center"> ZONA</th>
+                                <th scope="col" class="text-right">  </th>                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                   
+                        </thead>
+                        <tbody class="table table-bordered" id="asesorResultado">
+                        </tbody>
+                  </table> 
+                  </div>                 
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="asesorPedido" hidden >
+        <div class="container">
+          <div id="asesorPedido-row" class="row justify-content-center align-items-center">
+            <div id="asesorPedido-column" class="col-md-24">
+              <div id="asesorPedido-box" class="col-md-24">
+                <form id="asesorPedido-form" class="form" action="" method="">
+                  <h3 class="text-center text-info">Orden de pedido</h3>
+                  <div class="form-group">
+                    <label for="useremail" class="text-info">Pedido:</label><br />
+                    <div class="form-group text-center">
+                      <input type="button" name="submit" class="btn btn-info btn-md" id="asesorPedidoBtn" value="Enviar Solicitud Pedido"    onclick="autenticar()"/>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center"> <I>Agregar</I></th>
+                                <th scope="col" class="text-center"> Eliminar</th>
+                                <th scope="col" class="text-center"> Nombre</th>
+                                <th scope="col" class="text-center"> Categoria</th>
+                                <th scope="col" class="text-center"> Descripción</th>
+                                <th scope="col" class="text-center"> Precio</th>
+                                <th scope="col" class="text-center"> Foto</th>
+                                <th scope="col" class="text-center"> Cantidad</th>
+
+
+                                <th scope="col" class="text-right">  </th>                                
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                   
+                        </thead>
+                        <tbody class="table table-bordered" id="asesorpedidoResultado">
+                        </tbody>
+                  </table>                  
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+  
+  
 </body>
 </html>
