@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.Date;
+
 /**
  *
  * @author Diego Parra
@@ -21,6 +23,8 @@ public class User {
     private Integer id;
     private String identification;
     private String name;
+    private Date birthDay;
+    private Date monthBirthtDay;
     private String address;
     private String cellPhone;
     private String email;
