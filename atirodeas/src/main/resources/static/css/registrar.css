@@ -1,16 +1,18 @@
 body {
   margin: 0;
   padding: 0;
- background-color: rgb(37, 30, 30);
+  background-image: url(../img/atirodeas1.jpeg);
   background-size: cover;
   height: 100vh;
 }
-#login .container #login-row #login-column #login-box {
-  margin-top: 30px;
+
+#login .container #login-row #login-column #login-box{
+  margin-top: 60px;
   max-width: 600px;
   height: auto;
+  color: black;
   border: 1px solid #9c9c9c;
-  background-color: #eaeaea;
+  background-color: #eaeaeae3;
 }
 #login .container #login-row #login-column #login-box #login-form {
   padding: 20px;
@@ -23,4 +25,35 @@ body {
   #login-form
   #register-link {
   margin-top: -85px;
+}
+
+
+
+#autenticate{
+  background-color: rgba(0, 0, 255, 0.623);
+}
+
+#titulo{
+  background-color: rgba(255, 228, 196, 0.61);
+}
+
+#col-md-6{
+  background-color: rgba(255, 228, 196, 0.644);
+}
+
+#Subtitulo2️⃣{
+  color: blue;
+  background-color: rgba(240, 255, 255, 0.692);
+  text-indent: 430px;
+  margin-top: 25px;
+}
+
+
+#card1{
+  background-color: rgba(127, 255, 212, 0.459);
+
+}
+
+#tabla0{
+  background-color: rgba(240, 255, 255, 0.637);
 }

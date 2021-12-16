@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/registrar.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>A tiro de AS</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbr-expand-lg navbar-dar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"> A tiro de As</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-collapse" id="navbarNavDropdown"> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+      
+                    <a class="nav-link active ps-5" aria-current="page" href="./index.html">
+                      <div class="sb-nav-link-icon "><i class="fas fa-home "></i>
+                    </div>
+                      Home
+                    </a>
+                  </li>            
+                </ul>
+              </div>
+            </div>
+          </nav>
+</header>
+
+
+  <div class="container">
+    <h1 id="titulo" class="text-md-center">Bienvenido</h1>
+
+    <div class="row">
+      <div id="col-md-6">
+        <table class="table table-bordered border-primary">
+          <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Perfil</th>
+            <th>Terminar</th>
+          </tr>
+          <tr>
+            <td id="userName"></td>
+            <td id="userEmail"></td>
+            <td id="userType"></td>
+            <td><a id="cerrarSession" href="#">Cerrar Sessión</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <h2 id="Subtitulo2️⃣">Opciones disponibles</h2>
+    <div id="opcionesAsesor" class="row">
+      <div class="col-md-4" >
+        <div class="card" style="width: 18rem">
+          <div class="card-body" id="card1">
+            <p class="card-text">
+              Registrar Ordenes
+            </p>
+            <ul>
+              <li><a href="ordenes.html" class="card-link">Procesar Ordenes</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem">
+          <div class="card-body" id="card1">
+            <p class="card-text">
+              Ordenes de pedido registradas por el asesor comercial
+            </p>
+            <ul>
+              <li><a href="ordenasesor.html" class="card-link">Listar Ordenes</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem">
+          <div class="card-body" id="card1">
+            <p class="card-text">
+              Listado de ordenes de pedido por fecha
+            </p>
+            <ul>
+              <li><a href="ordenesfecha.html" class="card-link">Lista de Ordenes x fecha</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem">
+          <div class="card-body" id="card1">
+            <p class="card-text">
+              Listado de ordenes de pedido por estado
+            </p>
+            <ul>
+              <li><a href="ordenesestado.html" class="card-link">Lista de Ordenes x estado</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="opcionesAdm" class="row">
+      <div class="col-md-6">
+        <div class="card" style="width: 18rem">
+          <div class="card-body" id="card1">
+            <p class="card-text">
+              Administración de Usuarios
+            </p>
+            <ul>
+              <li><a href="usuarios.html" class="card-link">Lista de Usuarios</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card" style="width: 18rem">
+          <div class="card-body" id="card1">
+            <p class="card-text">
+              Administración de Suplementos
+            </p>
+            <ul>
+              <li><a href="productos.html" class="card-link">Lista de Suplementos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="opcionesCoord" class="row">
+      <div class="col-md-12">
+        <div class="card" style="width: 18rem">
+          <div class="card-body" id="card1">
+            <p class="card-text">
+              Aprobar/Rechazar Ordenes de pedido de sus fuerza de ventas
+            </p>
+            <ul>
+              <li><a href="ordeneszona.html" class="card-link">Gestionar Ordenes de su zona</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/menu/menu.js"></script>
+</body>
+
+</html>
